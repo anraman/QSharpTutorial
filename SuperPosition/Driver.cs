@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SuperPosition.Reference
+namespace SuperPosition
 {
 #region Hidden
     internal static class Utilities
