@@ -53,7 +53,7 @@ namespace SuperPosition
                 System.Console.WriteLine($"The result of putting a qubit in |+> was {message}");
 
                 var qubitCount = 4;
-                message = sim.RunManyTimesN(s => SuperPositionOverAllBasisVectors.Run(s, qubitCount), 100);
+                message = sim.RunManyTimesN(s => SuperPositionOverAllBasisVectors.Run(s, qubitCount), 10000);
                 System.Console.WriteLine($"The result of putting {qubitCount} qubits in the GHZ state was {message}");
             }
         }

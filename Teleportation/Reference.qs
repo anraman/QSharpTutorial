@@ -46,7 +46,10 @@
 			CNOT(left, right);
 		}
 
-		adjoint auto;
+		adjoint {
+			(Adjoint CNOT) (left, right);
+			(Adjoint H) (left);
+		};
 	}
 
     operation TeleportMessage(msg : Qubit, there : Qubit) : () {
